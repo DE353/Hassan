@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to anime world</h1>
-    <hr>
-    <a href="tools/Black Panther Pdfbooksfree.pk.pdf" target="_blank" rel="noopener noreferrer">Best novel</a>
+    <header>
+        <nav>
+            <div class="left">Hassan,s portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contect us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <p>my name is hassan and i am a student who live in village with  his <b>spirit</b> btw i am in 9th and <i> i need your help </i> <em>and this is my first website</em></p>
-    <hr>
-    <h2>Watch any anime </h2>
-    <a href="https://aniwatch.to" target="_blank"><h3>Anime</h3></a>
-    <hr>
-    <h2>anime (models) list</h2>
-    <ol>
-        <li>Itachi</li>
-        <li>Ken</li>
-    </ol>
-    <hr>
-    <h2>medkit list</h2>
-    <ul>
-        <li>needle</li>
-        <li>cotton</li>
-        <li>bandage</li>
-        <li>siring</li>
-    </ul>
-    <hr>
-    <h2>Itachi</h2>
-    <img src="tools/itachi akastki.jpg" width="270" alt="Itachi">
-    <video src="tools/is video.mp4" width="600" poster="tools/i poster.jpg" controls></video>
-    <img src="tools/mangekyo sharingan.png" width="350" alt="sharingan">
-    <hr>
-    <h2>Ken</h2>
-    <img src="tools/ken.jpg" width="350" alt="ken">
-    <video src="tools/ken video.mp4" loop poster="tools/ken.jpg" width="350" controls width="250" ></video>
-    <img src="tools/ken goul.jpg" width="800" alt="goul">
-    <hr>
-    <h2>If you wann,t purchase <a href="payment form.html"  rel="noopener noreferrer">Click here</a></h2>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Hassan</span>
 
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="pngwing.com.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Develper', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
